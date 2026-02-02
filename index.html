@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>#yew | Your Cronus Zen Scripts</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: '#D4AF37',
+                        goldHover: '#C5A028',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+        body {
+            background-color: #ffffff;
+            color: #000000;
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .gold-border {
+            border: 2px solid #D4AF37;
+        }
+        .gold-bg {
+            background-color: #D4AF37;
+        }
+        .gold-text {
+            color: #D4AF37;
+        }
+        .btn-gold {
+            background-color: #D4AF37;
+            color: #000000;
+            transition: all 0.3s ease;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        .btn-gold:hover {
+            background-color: #C5A028;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+        }
+        .card-shadow {
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+        }
+        .card-shadow:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(212, 175, 55, 0.1);
+            border-color: #D4AF37;
+        }
+        ::selection {
+            background: #D4AF37;
+            color: #fff;
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+    <!-- Navbar -->
+    <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b-2 border-gold py-5 px-6">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="text-3xl font-black tracking-tighter gold-text italic">#yew</div>
+            <div class="hidden md:flex gap-10 text-sm font-bold uppercase tracking-widest text-black">
+                <a href="#hoops" class="hover:text-gold transition">Hoops</a>
+                <a href="#arc" class="hover:text-gold transition">Arc</a>
+                <a href="#ghost" class="hover:text-gold transition">Ghost</a>
+                <a href="https://discord.gg/yew" class="hover:text-gold transition">Discord</a>
+            </div>
+            <a href="#scripts" class="btn-gold px-8 py-2.5 rounded-full text-sm">Shop Now</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-24 px-6 text-center max-w-5xl mx-auto">
+        <div class="mb-4 inline-block px-4 py-1 rounded-full border-2 border-gold text-xs font-black uppercase tracking-widest gold-text">
+            Join 26,000+ Users
+        </div>
+        <h1 class="text-7xl md:text-9xl font-black mb-6 tracking-tighter leading-none text-black">
+            YOUR CRONUS <br> <span class="gold-text">ZEN SCRIPTS!</span>
+        </h1>
+        <p class="text-xl text-black/60 font-medium mb-12 max-w-2xl mx-auto">
+            Elite AI-powered gaming scripts for NBA 2K26, Fortnite, and Black Ops 7. Dominate the competition with #yew.
+        </p>
+        <div class="flex flex-col md:flex-row items-center justify-center gap-6">
+            <a href="#scripts" class="btn-gold px-12 py-5 rounded-2xl text-xl w-full md:w-auto text-center">
+                View Scripts
+            </a>
+            <a href="https://discord.gg/yew" class="border-2 border-gold px-12 py-5 rounded-2xl text-xl font-black uppercase tracking-tighter w-full md:w-auto hover:bg-gold/5 transition flex items-center justify-center gap-3">
+                <i class="fa-brands fa-discord"></i> Join Discord
+            </a>
+        </div>
+    </section>
+
+    <!-- Scripts Grid -->
+    <section id="scripts" class="py-24 px-6 bg-gray-50/50">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-5xl font-black uppercase tracking-tighter mb-4">The #yew <span class="gold-text">Lineup</span></h2>
+                <div class="h-1.5 w-24 bg-gold mx-auto rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <!-- Hoops Card -->
+                <div id="hoops" class="bg-white border-2 border-transparent p-8 rounded-[2.5rem] card-shadow flex flex-col">
+                    <div class="mb-6 flex justify-between items-start">
+                        <div class="text-xs font-black bg-gold/10 gold-text px-3 py-1 rounded-full uppercase">NBA 2K26</div>
+                        <div class="text-xs font-bold text-black/40 italic">4.9 (709 Reviews)</div>
+                    </div>
+                    <h3 class="text-4xl font-black mb-2 gold-text italic">#hoops</h3>
+                    <p class="text-black/60 mb-8 font-semibold">The world's most advanced shooting script for 2K.</p>
+                    
+                    <ul class="space-y-4 mb-10 flex-grow">
+                        <li class="flex items-center gap-3 font-bold text-sm">
+                            <i class="fa-solid fa-circle-check gold-text"></i> AI Auto-Green
+                        </li>
+                        <li class="flex items-center gap-3 font-bold text-sm">
+                            <i class="fa-solid fa-circle-check gold-text"></i> Shooting Mods
+                        </li>
+                        <li class="flex items-center gap-3 font-bold text-sm">
+                            <i class="fa-solid fa-circle-check gold-text"></i> Free Weekly Updates
+                        </li>
+                    </ul>
+
+                    <div class="pt-6 border-t border-gray-100">
+                        <div class="flex justify-between items-center mb-6">
+                            <span class="text-3xl font-black">$49.99</span>
+                            <span class="text-xs font-bold text-black/40 uppercase">Lifetime Access</span>
+                        </div>
+                        <a href="https://whop.com/yew" class="btn-gold block text-center py-4 rounded-xl">Buy Now</a>
+                    </div>
+                </div>
+
+                <!-- Arc Card -->
+                <div id="arc" class="bg-white border-2 border-transparent p-8 rounded-[2.5rem] card-shadow flex flex-col scale-105 border-gold shadow-xl">
+                    <div class="mb-6 flex justify-between items-start">
+                        <div class="text-xs font-black bg-gold/10 gold-text px-3 py-1 rounded-full uppercase">Fortnite</div>
+                        <div class="text-xs font-bold text-black/40 italic">4.9 (520 Reviews)</div>
+                    </div>
+                    <h3 class="text-4xl font-black mb-2 gold-text italic">#arc</h3>
+                    <p class="text-black/60 mb-8 font-semibold">Unmatched tracking and building macros for Fortnite.</p>
+                    
+                    <ul class="space-y-4 mb-10 flex-grow">
+                        <li class="flex items-center gap-3 font-bold text-sm">
+                            <i class="fa-solid fa-circle-check gold-text"></i> AI Auto-Tracking
+                        </li>
+                        <li class="flex items-center gap-3 font-bold text-sm">
+                            <i class="fa-solid fa-circle-check gold-text"></i> Building Macros
+                        </li>
+                        <li class="flex items-center gap-3 font-bold text-sm">
+                            <i class="fa-solid fa-circle-check gold-text"></i> Free Weekly Updates
+                        </li>
+                    </ul>
+
+                    <div class="pt-6 border-t border-gray-100">
+                        <div class="flex justify-between items-center mb-6">
+                            <span class="text-3xl font-black">$49.99</span>
+                            <span class="text-xs font-bold text-black/40 uppercase">Lifetime Access</span>
+                        </div>
+                        <a href="https://whop.com/yew" class="btn-gold block text-center py-4 rounded-xl">Buy Now</a>
+                    </div>
+                </div>
+
+                <!-- Ghost Card -->
+                <div id="ghost" class="bg-white border-2 border-transparent p-8 rounded-[2.5rem] card-shadow flex flex-col">
+                    <div class="mb-6 flex justify-between items-start">
+                        <div class="text-xs font-black bg-gold/10 gold-text px-3 py-1 rounded-full uppercase">BO7</div>
+                        <div class="text-xs font-bold text-black/40 italic">4.9 (387 Reviews)</div>
+                    </div>
+                    <h3 class="text-4xl font-black mb-2 gold-text italic">#ghost</h3>
+                    <p class="text-black/60 mb-8 font-semibold">Dominate the lobby with AI-enhanced aim and movement.</p>
+                    
+                    <ul class="space-y-4 mb-10 flex-grow">
+                        <li class="flex items-center gap-3 font-bold text-sm">
+                            <i class="fa-solid fa-circle-check gold-text"></i> AI Aim Enhancement
+                        </li>
+                        <li class="flex items-center gap-3 font-bold text-sm">
+                            <i class="fa-solid fa-circle-check gold-text"></i> Movement Macros
+                        </li>
+                        <li class="flex items-center gap-3 font-bold text-sm">
+                            <i class="fa-solid fa-circle-check gold-text"></i> Free Weekly Updates
+                        </li>
+                    </ul>
+
+                    <div class="pt-6 border-t border-gray-100">
+                        <div class="flex justify-between items-center mb-6">
+                            <span class="text-3xl font-black">$49.99</span>
+                            <span class="text-xs font-bold text-black/40 uppercase">Lifetime Access</span>
+                        </div>
+                        <a href="https://whop.com/yew" class="btn-gold block text-center py-4 rounded-xl">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mid-Page Call to Action -->
+    <section class="py-24 bg-white border-y-2 border-gold text-center">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-20">
+                <div>
+                    <div class="text-4xl font-black gold-text mb-2">26k+</div>
+                    <div class="text-xs font-bold uppercase tracking-widest">Active Users</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-black gold-text mb-2">1.5k+</div>
+                    <div class="text-xs font-bold uppercase tracking-widest">Discord Members</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-black gold-text mb-2">4.9/5</div>
+                    <div class="text-xs font-bold uppercase tracking-widest">Average Rating</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-black gold-text mb-2">24/7</div>
+                    <div class="text-xs font-bold uppercase tracking-widest">Active Support</div>
+                </div>
+            </div>
+
+            <h2 class="text-5xl font-black mb-10 tracking-tighter uppercase">POWERED BY <span class="gold-text italic">WHOP</span></h2>
+            <div class="flex justify-center flex-wrap gap-10 text-5xl mb-12">
+                <i class="fa-brands fa-cc-visa text-black/20 hover:text-gold transition cursor-pointer"></i>
+                <i class="fa-brands fa-cc-mastercard text-black/20 hover:text-gold transition cursor-pointer"></i>
+                <i class="fa-brands fa-cc-apple-pay text-black/20 hover:text-gold transition cursor-pointer"></i>
+                <i class="fa-brands fa-cc-google-pay text-black/20 hover:text-gold transition cursor-pointer"></i>
+                <i class="fa-brands fa-cc-stripe text-black/20 hover:text-gold transition cursor-pointer"></i>
+            </div>
+            <a href="https://whop.com/yew" class="btn-gold px-16 py-6 rounded-2xl text-2xl inline-block w-full max-sm:max-w-full max-w-sm mx-auto">Join the Elite</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-16 text-center text-black font-bold uppercase tracking-[0.2em] text-xs px-6">
+        <div class="gold-text text-2xl font-black mb-8 italic">#yew</div>
+        <div class="flex flex-wrap justify-center gap-8 mb-8">
+            <a href="#hoops" class="hover:text-gold transition">Hoops</a>
+            <a href="#arc" class="hover:text-gold transition">Arc</a>
+            <a href="#ghost" class="hover:text-gold transition">Ghost</a>
+            <a href="https://discord.gg/yew" class="hover:text-gold transition">Discord</a>
+        </div>
+        <p class="mb-2">© 2025 yew. ALL RIGHTS RESERVED.</p>
+        <p class="text-black/40 max-w-xs mx-auto normal-case tracking-normal">Not affiliated with any game developers or console manufacturers. Use at your own risk.</p>
+    </footer>
+
+</body>
+</html>

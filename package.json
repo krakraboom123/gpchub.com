@@ -1,0 +1,16 @@
+{
+  "name": "yew-scripts-landing",
+  "version": "1.0.0",
+  "description": "Elite Cronus Zen Scripts Landing Page",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "serve": "^14.2.1"
+  }
+}
+
