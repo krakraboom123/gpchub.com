@@ -81,11 +81,14 @@
             </div>
         </div>
 
-        <div class="relative">
-            <div class="aspect-square bg-gray-100 rounded-[3rem] border-4 border-silver/20 flex items-center justify-center">
-                <i class="fa-solid fa-gun silver-text text-[12rem] opacity-20 -rotate-12"></i>
+        <div class="relative group">
+            <div class="aspect-square bg-gray-100 rounded-[3rem] border-4 border-silver/20 flex items-center justify-center overflow-hidden">
+                <!-- Product Image for Silver Page -->
+                <img src="product-silver.png" alt="Silver Script" class="w-full h-full object-cover group-hover:scale-110 transition duration-700" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                
+                <i class="fa-solid fa-gun silver-text text-[12rem] opacity-20 -rotate-12 hidden"></i>
                 <div class="absolute inset-0 flex items-center justify-center">
-                    <div class="bg-white p-8 rounded-3xl shadow-2xl border-2 border-silver max-w-xs text-center">
+                    <div class="bg-white/90 backdrop-blur-sm p-8 rounded-3xl shadow-2xl border-2 border-silver max-w-xs text-center transform group-hover:-translate-y-2 transition duration-500">
                         <div class="text-5xl font-black silver-text mb-4">#1</div>
                         <p class="font-bold text-sm uppercase tracking-widest">Victory Royale Ratio</p>
                     </div>
