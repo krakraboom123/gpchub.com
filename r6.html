@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>#r6 | Rainbow Six Siege Script | #gpc</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: { brand: '#38BDF8', brandHover: '#0EA5E9' },
+                    fontFamily: { sans: ['Inter', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+        body { background-color: #ffffff; color: #000000; font-family: 'Inter', sans-serif; }
+        .brand-text { color: #38BDF8; }
+        .btn-brand { background-color: #38BDF8; color: #ffffff; font-weight: 800; transition: all 0.3s ease; }
+        .btn-brand:hover { background-color: #0EA5E9; transform: translateY(-2px); }
+    </style>
+</head>
+<body class="min-h-screen">
+    <nav class="bg-white border-b-2 border-brand py-5 px-6">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <a href="/" class="text-3xl font-black tracking-tighter brand-text italic">#gpc</a>
+            <a href="/" class="text-sm font-bold uppercase tracking-widest hover:text-brand transition">Back to Home</a>
+        </div>
+    </nav>
+
+    <main class="max-w-7xl mx-auto py-20 px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div>
+            <div class="mb-4 inline-block px-4 py-1 rounded-full border-2 border-brand text-xs font-black uppercase tracking-widest brand-text">
+                RAINBOW SIX SIEGE ELITE SCRIPT
+            </div>
+            <h1 class="text-7xl font-black mb-6 tracking-tighter italic brand-text">#r6-siege</h1>
+            <p class="text-xl text-black/60 font-medium mb-10 leading-relaxed">
+                The most advanced tactical script for Rainbow Six Siege. Featuring industry-leading recoil control, perfect lean timing, and optimized movement macros.
+            </p>
+            
+            <div class="flex items-center gap-8 border-t border-gray-100 pt-10">
+                <div>
+                    <div class="text-4xl font-black">$74.99</div>
+                    <div class="text-xs font-bold text-black/40 uppercase tracking-widest">Lifetime Access</div>
+                </div>
+                <a href="https://whop.com/gpc" class="btn-brand px-12 py-5 rounded-2xl text-xl flex-grow text-center">Get Instant Access</a>
+            </div>
+        </div>
+
+        <div class="relative group">
+            <div class="aspect-square bg-gray-100 rounded-[3rem] border-4 border-brand/20 flex items-center justify-center overflow-hidden">
+                <img src="product-r6.png" alt="R6 Siege Script" class="w-full h-full object-cover group-hover:scale-110 transition duration-700" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                <i class="fa-solid fa-shield-halved brand-text text-[12rem] opacity-20 hidden"></i>
+            </div>
+        </div>
+    </main>
+
+    <footer class="py-16 text-center border-t border-gray-100">
+        <p class="font-black uppercase tracking-widest text-xs">© 2025 gpc scripts. Not affiliated with Ubisoft.</p>
+    </footer>
+</body>
+</html>
+
