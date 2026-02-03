@@ -18,21 +18,22 @@
     </script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
-        body { background-color: #ffffff; color: #000000; font-family: 'Inter', sans-serif; }
+        body { background-color: #f8fafc; color: #000000; font-family: 'Inter', sans-serif; }
         .brand-text { color: #38BDF8; }
         .btn-brand { background-color: #38BDF8; color: #ffffff; font-weight: 800; transition: all 0.3s ease; }
         .btn-brand:hover { background-color: #0EA5E9; transform: translateY(-2px); }
     </style>
 </head>
 <body class="min-h-screen">
-    <nav class="bg-white border-b-2 border-brand py-5 px-6">
+    <nav class="bg-white border-b-2 border-brand py-5 px-6 sticky top-0 z-50">
         <div class="max-w-7xl mx-auto flex justify-between items-center">
             <a href="/" class="text-3xl font-black tracking-tighter brand-text italic">#gpc</a>
             <a href="/" class="text-sm font-bold uppercase tracking-widest hover:text-brand transition">Back to Home</a>
         </div>
     </nav>
 
-    <main class="max-w-7xl mx-auto py-20 px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+    <!-- Product Header -->
+    <main class="max-w-7xl mx-auto py-20 px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center border-b border-gray-200">
         <div>
             <div class="mb-4 inline-block px-4 py-1 rounded-full border-2 border-brand text-xs font-black uppercase tracking-widest brand-text">
                 FC 26 ELITE SCRIPT
@@ -42,7 +43,7 @@
                 Dominate the pitch with perfect timed finishing, AI-driven defense, and optimized sprint control for FC 26.
             </p>
             
-            <div class="flex items-center gap-8 border-t border-gray-100 pt-10">
+            <div class="flex items-center gap-8 pt-10">
                 <div>
                     <div class="text-4xl font-black">$49.99</div>
                     <div class="text-xs font-bold text-black/40 uppercase tracking-widest">Lifetime Access</div>
@@ -52,16 +53,86 @@
         </div>
 
         <div class="relative group">
-            <div class="aspect-square bg-gray-100 rounded-[3rem] border-4 border-brand/20 flex items-center justify-center overflow-hidden">
+            <div class="aspect-square bg-white rounded-[3rem] border-4 border-brand/20 flex items-center justify-center overflow-hidden shadow-2xl">
                 <img src="product-fc26.png" alt="FC 26 Script" class="w-full h-full object-cover group-hover:scale-110 transition duration-700" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
                 <i class="fa-solid fa-futbol brand-text text-[12rem] opacity-20 hidden"></i>
             </div>
         </div>
     </main>
 
-    <footer class="py-16 text-center border-t border-gray-100">
+    <!-- Features Section -->
+    <section class="max-w-5xl mx-auto py-24 px-6 space-y-32">
+        <!-- Feature 1 -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div class="rounded-3xl overflow-hidden shadow-xl aspect-video bg-black border-4 border-brand/20">
+                <video class="w-full h-full object-cover" autoplay loop muted playsinline>
+                    <source src="fc26-timed-finishing.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="space-y-6">
+                <div class="text-[10px] font-black uppercase tracking-widest text-brand">Exclusive to GPC</div>
+                <h2 class="text-4xl font-black tracking-tight">Perfect Timed Finishing</h2>
+                <p class="text-black/60 font-medium leading-relaxed">
+                    Hit green timed finishing every single time with 1-click precision. FC26's most advanced shot script.
+                </p>
+                <a href="https://whop.com/gpc" class="btn-brand inline-block px-8 py-3 rounded-xl text-sm">Get It Now</a>
+            </div>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div class="md:order-2 rounded-3xl overflow-hidden shadow-xl aspect-video bg-black border-4 border-brand/20">
+                <video class="w-full h-full object-cover" autoplay loop muted playsinline>
+                    <source src="fc26-ai-defend.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="md:order-1 space-y-6 md:text-right">
+                <div class="text-[10px] font-black uppercase tracking-widest text-brand">Exclusive to GPC</div>
+                <h2 class="text-4xl font-black tracking-tight">AI Defend</h2>
+                <p class="text-black/60 font-medium leading-relaxed">
+                    Our AI-driven tracking stays glued to the opponent. Elite defense without needing manual stick input.
+                </p>
+                <a href="https://whop.com/gpc" class="btn-brand inline-block px-8 py-3 rounded-xl text-sm">Get It Now</a>
+            </div>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div class="rounded-3xl overflow-hidden shadow-xl aspect-video bg-black border-4 border-brand/20">
+                <video class="w-full h-full object-cover" autoplay loop muted playsinline>
+                    <source src="fc26-infinite-sprint.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="space-y-6">
+                <div class="text-[10px] font-black uppercase tracking-widest text-brand">Exclusive to GPC</div>
+                <h2 class="text-4xl font-black tracking-tight">Infinite Sprint</h2>
+                <p class="text-black/60 font-medium leading-relaxed">
+                    Never run out of stamina. Built-in protection to keep your account safe and undetected while you dominate.
+                </p>
+                <a href="https://whop.com/gpc" class="btn-brand inline-block px-8 py-3 rounded-xl text-sm">Get It Now</a>
+            </div>
+        </div>
+
+        <!-- Feature 4 -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div class="md:order-2 rounded-3xl overflow-hidden shadow-xl aspect-video bg-black border-4 border-brand/20">
+                <video class="w-full h-full object-cover" autoplay loop muted playsinline>
+                    <source src="fc26-skill-combos.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="md:order-1 space-y-6 md:text-right">
+                <div class="text-[10px] font-black uppercase tracking-widest text-brand">Exclusive to GPC</div>
+                <h2 class="text-4xl font-black tracking-tight">Skill Combos</h2>
+                <p class="text-black/60 font-medium leading-relaxed">
+                    Perform elite skill moves using simple D-pad inputs. No complex stick work required—just press and go.
+                </p>
+                <a href="https://whop.com/gpc" class="btn-brand inline-block px-8 py-3 rounded-xl text-sm">Get It Now</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-16 text-center border-t border-gray-200">
         <p class="font-black uppercase tracking-widest text-xs">© 2025 gpc scripts. Not affiliated with EA Sports.</p>
     </footer>
 </body>
 </html>
-
